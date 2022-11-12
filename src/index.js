@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, HashRouter, Routes, Route } from 'react-router-dom';
 import './index.scss';
 import App from './App';
 import Layout from "./pages/Layout";
@@ -32,9 +32,9 @@ import { ResetStyle } from './components/GlobalStyle';
 
 export default function MainApp() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
-        <Route path="./" element={<Layout />}>
+        <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="about" element={<About />}>
             <Route index element={<AboutOverview />} />
@@ -69,7 +69,7 @@ export default function MainApp() {
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

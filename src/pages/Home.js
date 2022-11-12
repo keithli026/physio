@@ -28,21 +28,21 @@ function Home() {
             <h2>Title 1</h2>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
           </div>
-          <img src="/image_18_to_6.png" alt="slide 1"></img>
+          <img src={process.env.PUBLIC_URL + '/image_18_to_6.png'} alt="slide 1"></img>
         </div>
         <div className="image-wrapper">
           <div className="textbox">
             <h2>Title 2</h2>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
           </div>
-          <img src="/image_18_to_6.png" alt="slide 1"></img>
+          <img src={process.env.PUBLIC_URL + '/image_18_to_6.png'} alt="slide 1"></img>
         </div>
         <div className="image-wrapper">
           <div className="textbox">
             <h2>Title 3</h2>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
           </div>
-          <img src="/image_18_to_6.png" alt="slide 1"></img>
+          <img src={process.env.PUBLIC_URL + '/image_18_to_6.png'} alt="slide 1"></img>
         </div>
       </Slider>
       <Container className="promo-section">
