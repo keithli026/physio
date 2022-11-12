@@ -1,0 +1,130 @@
+#header {
+    z-index: 1;
+    > div {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        .level-0 {
+            li {
+                &.expandable {
+                    >a {
+                        &::after {
+                            display: inline-block;
+                            content: "";
+                            vertical-align: initial;
+                            border-top: 0.4em solid;
+                            border-right: 0.4em solid transparent;
+                            border-bottom: 0;
+                            border-left: 0.4em solid transparent;
+                            margin-left: 0.8em;
+                            margin-bottom: 0.15em;
+                        }
+                    }
+                }
+            
+                ul {
+                    white-space: nowrap;
+                    position: absolute;
+                    background-color: #f2f2f2;
+                }
+                &:hover {
+                    > ul {
+                        display: flex;
+                    }
+                }
+        
+            }
+        
+            > li {
+                position: relative;
+                margin-left: 10px;
+                > ul {
+                    top: 100%;
+                    left: 0;
+                    > li {
+                        &.expandable {
+                            >a {
+                                &::after {
+                                    display: inline-block;
+                                    content: "";
+                                    vertical-align: initial;
+                                    border-top: 0.4em solid transparent;
+                                    border-right: 0;
+                                    border-bottom: 0.4em solid transparent;
+                                    border-left: 0.4em solid;
+                                    margin-left: 0.8em;
+                                    margin-bottom: 0;
+                                }
+                            }
+                        }
+                        ul {
+                            top: 0;
+                            left: 100%;
+                        }
+                    }
+                }
+            }
+        }
+        .menuBtn {
+            svg {
+                font-size: 30px;
+            }
+        }
+    }
+    .mnav {
+        background-color: #1cb7ef;
+        .mlevel-0 {
+            overflow-y: auto;
+            a {
+                display: inline-block;
+                max-width: 90%;
+                padding: 0.375rem 0.75rem;
+                color: white;
+            }
+            .dropdownBtn {
+                max-width: 10%;
+                float: right;
+                padding: 0.375rem 0.75rem 0.375rem 0;
+                text-align: end;
+                color: white;
+                > div.down {
+                    display: inline-block;
+                    vertical-align: middle;
+                    border-top: 0.4em solid;
+                    border-right: 0.4em solid transparent;
+                    border-bottom: 0;
+                    border-left: 0.4em solid transparent;
+                }
+                > div.up {
+                    display: inline-block;
+                    vertical-align: middle;
+                    border-top: 0;
+                    border-right: 0.4em solid transparent;
+                    border-bottom:  0.4em solid;
+                    border-left: 0.4em solid transparent;
+                    margin-bottom: 0.15em;
+                }
+            }
+            .mlevel-1 {
+                background-color: #c9c9c9;
+                a {
+                    color: black;
+                }
+                .dropdownBtn {
+                    color: black;
+                }
+            }
+            .mlevel-2 {
+                background-color: #F0F0F0;
+                a {
+                    color: black;
+                }
+                .dropdownBtn {
+                    color: black;
+                }
+            }
+        
+        }
+    }
+}
+
+

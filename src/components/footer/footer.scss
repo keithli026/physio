@@ -1,0 +1,28 @@
+#footer-top {
+    h2 {
+        color: white;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+}
+
+#footer-bottom {
+    h2 {
+        color: white;
+    }
+    .socialMedia {
+        margin-bottom: 30px;
+        a {
+            margin-right: 20px;
+            svg {
+                font-size: 30px;
+                color: white;
+            }
+        }
+    }
+}

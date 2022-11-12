@@ -1,0 +1,159 @@
+@import "../variable";
+.slick-slider {
+    margin-bottom: 50px;
+    .slick-list {
+        .slick-slide {
+            .image-wrapper {
+                position: relative;
+                .textbox {
+                    position: absolute;
+                    top: 0;
+                    left: 0.75rem;
+                    right: 0.75rem;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 0 auto;
+                    @media (min-width: $tablet-min-width-1) {
+                        width: 70%;
+                    }
+                    @media (min-width: $desktop-min-width-1) {
+                        width: 60%;
+                    }
+                    @media (min-width: $desktop-min-width-2) {
+                        width: 50%;
+                    }
+                    p {
+                        display: none;
+                    }
+                    @media (min-width: $tablet-min-width-1) {
+                        p {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .slick-arrow {
+        z-index: 1;
+        top: 50%;
+        height: 23px;
+        width: 23px;
+        background-color: white;
+        border-radius: 50%;
+        outline: unset;
+        &:focus {
+            top: 50%;
+            background-color: white;
+        }
+        &::before {
+            font-size: 30px;
+            color: $lightblue;
+            display: flex;
+            width: inherit;
+            height: inherit;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .slick-prev {
+        left: 10px;
+    }
+    
+    .slick-next {
+        right: 10px;
+    }
+    
+    .slick-dots {
+        li {
+            &.slick-active {
+                button {
+                    &::before {
+                        color: $lightblue;
+                    }
+                    &:focus {
+                        &::before {
+                            color: $lightblue;
+                        }
+                    }
+                }
+            }
+            button {
+                &::before {
+                    font-size: 6px;
+                    @media (min-width: $desktop-min-width) {
+                        font-size: 10px;
+                    }
+                }
+                &:focus {
+                    &::before {
+                        color: $lightblue;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.promo-section {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0;
+    @media (min-width: $desktop-min-width) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .content {
+        @media (min-width: $desktop-min-width) {
+            flex-basis: 48%;
+        }
+    }
+    .video_wrapper {
+        position: relative;
+        padding-bottom: 56.25%;
+        @media (min-width: $desktop-min-width) {
+            flex-basis: 48%;
+            padding-bottom: 0;
+        }
+        iframe {
+            border: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            @media (min-width: $desktop-min-width) {
+                position: unset;
+            }
+        }
+    }
+}
+
+.promo-section2 {
+    padding: 50px 0;
+    color: white;
+    background-color: $lightblue;
+    h2 {
+        color: white;
+    }
+    ul {
+        margin: 0;
+    }
+}
+
+.our-services-title {
+    background-color: black;
+    h2 {
+        color: white;
+    }
+}
+
+.our-services-content {
+
+}
